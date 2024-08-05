@@ -163,9 +163,9 @@
             display-name = "AUTO-MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &kp C_VOL_UP  &kp PG_UP    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp PSCRN  &kp C_VOL_DN     &kp PG_DN    &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &mkp MCLK &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &mkp MCLK &mkp RCLK    &trans  &trans
             >;
         };
 
