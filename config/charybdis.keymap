@@ -144,7 +144,7 @@
             bindings = <
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &kp PG_UP    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &kp PG_DN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &kp PSCRN  &kp PG_DN    &trans  &trans  &trans  &trans  &trans  &trans
                         &mkp LCLK  &mkp MCLK &mkp RCLK  &trans  &trans
             >;
         };
