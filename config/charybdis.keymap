@@ -16,6 +16,7 @@
 #define MOUSE 4
 #define SCROLL 5
 #define COLEMAK 6
+#define U_TAPPING_TERM 300
 
 / {
     trackball_listener {
@@ -163,8 +164,8 @@
             display-name = "AUTO-MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &kp PG_UP    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &kp PG_DN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &kp K_VOL_UP  &kp PG_UP    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp PSCRN  &kp K_VOL_DN     &kp PG_DN    &trans  &trans  &trans  &trans  &trans  &trans
                         &mkp LCLK  &mkp MCLK &mkp RCLK  &trans  &trans
             >;
         };
