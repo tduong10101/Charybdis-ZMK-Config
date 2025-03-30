@@ -107,9 +107,9 @@
         BASE {
             bindings = <
 &kp TAB  &kp Q             &kp W  &kp E   &kp R   &kp T  &kp Y   &kp U   &kp I      &kp O      &kp P     &kp BSPC
-&kp LCTRL &u_mt LEFT_GUI A  &u_mt LEFT_ALT S  &kp D   &kp F   &kp G  &kp H   &kp J   &kp K      &u_mt RIGHT_ALT L     &u_lt 4 SEMI  &u_mt RCTRL APOS
-&kp LSHFT &kp Z             &kp X  &kp C   &kp V   &kp B  &kp N   &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-                                   &kp ESC   &mo 1   &kp RET &kp SPACE   &mo 2
+&kp LCTRL &kp A  &kp S  &kp D   &kp F   &kp G  &kp H   &kp J   &kp K     $kp L     &kp SEMI  &u_mt RCTRL APOS
+&kp LSHFT &u_mt LEFT_GUI Z  &u_mt LEFT_ALT X  &u_mt LCTRL C   &u_mt LSHFT V   &kp B  &u_lt 4 N   &u_mt RSHFT M   &u_mt RCTRL COMMA  &u_mt RIGHT_ALT DOT    &u_mt RIGHT_ALT FSLH  &kp RSHFT
+                                   &kp ESC   &u_lt TAB 1   &kp RET &kp SPACE   &mo 2
             >;
         };
 
@@ -130,7 +130,6 @@
                                        &trans      &kp BSPC    &mo 3     &trans     &trans
             >;
         };
-
         BT {
             bindings = <
 &trans  &trans   &trans  &trans   &trans  &trans   &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4  &bt BT_CLR
