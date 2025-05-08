@@ -10,9 +10,6 @@
 #define BT 3
 #define MOUSE 4
 #define SCROLL 5
-/ {
-    chosen { zmk,matrix_transform = &default_transform; };
-};
 
 / {
     combos {
