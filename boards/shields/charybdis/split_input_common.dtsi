@@ -4,8 +4,8 @@
 #define DEF 0
 #define LOWER 1
 #define RAISE 2
-#define MOUSE 4
-#define SCROLL 5
+#define MOUSE 3
+#define SCROLL 4
 
 
 / {
@@ -30,7 +30,7 @@
     };
 
     move {
-      layers = <DEF>;
+      layers = <DEF MOUSE>;
       input-processors = <&auto_mouse_layer MOUSE 5000>;
     };
   };
