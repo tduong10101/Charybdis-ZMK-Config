@@ -112,7 +112,7 @@
             bindings = <
 &kp TAB   &kp Q             &kp W             &kp E          &kp R           &kp T         &kp Y       &kp U               &kp I         &kp O                 &kp P             &kp BSPC
 &kp LCTRL &u_mt LEFT_GUI A  &u_mt LEFT_ALT S  &u_mt LCTRL D   &u_mt LSHFT F   &kp G         &kp H       &u_mt RSHFT J       &u_mt RCTRL K &u_mt RIGHT_ALT L     &u_mt RGUI SEMI   &u_mt RCTRL APOS
-&kp LSHFT &kp Z             &kp X             &kp C           &kp V           &kp B         &u_lt MON   &kp M               &kp COMMA     &kp DOT               &kp FSLH          &kp RSHFT
+&kp LSHFT &kp Z             &kp X             &kp C           &kp V           &kp B         &u_lt MOUSE N   &kp M               &kp COMMA     &kp DOT               &kp FSLH          &kp RSHFT
                                               &kp ESC         &u_lt LOWER TAB     &kp RET       &kp SPACE   &mo RAISE
             >;
         };
@@ -150,10 +150,10 @@
         SCROLL {
             display-name = "Scroll";
             bindings = <
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &kp C_VOL_UP  &kp PG_UP    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp PSCRN  &kp C_VOL_DN     &kp PG_DN    &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &mkp MCLK &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
