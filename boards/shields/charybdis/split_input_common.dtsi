@@ -31,7 +31,7 @@
     };
 
     move {
-      layers = <DEF MOUSE>;
+      layers = <DEF GAME MOUSE>;
       input-processors = <&auto_mouse_layer MOUSE 5000>;
     };
   };
