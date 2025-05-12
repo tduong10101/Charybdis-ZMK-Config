@@ -2,13 +2,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define U_TAPPING_TERM 150
+#define U_TAPPING_TERM 170
 
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
 #define MOUSE 3
 #define SCROLL 4
+#define GAME 5
 
 / {
     combos {
@@ -140,20 +141,30 @@
         MOUSE {
             display-name = "Mouse";
             bindings = <
-&trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans    &trans     &mo SCROLL  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &mkp MCLK &mkp RCLK  &trans  &trans
+&trans  &trans        &trans        &trans      &trans      &trans     &trans       &tog GAME   &trans    &trans          &trans    &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LSHFT   &trans     &trans       &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
+&trans  &trans        &trans        &trans      &trans      &trans     &mo SCROLL   &trans      &trans    &trans          &trans    &trans
+                                    &mkp LCLK   &mkp MCLK   &mkp RCLK  &trans  &trans
             >;
         };
 
         SCROLL {
             display-name = "Scroll";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans        &trans        &trans      &trans      &trans    &trans  &tog GAME   &trans    &trans          &trans    &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LSHFT   &trans    &trans  &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
+&trans  &trans        &trans        &trans      &trans      &trans    &trans  &trans      &trans    &trans          &trans    &trans
+                                    &mkp LCLK   &mkp MCLK   &mkp RCLK &trans  &trans
+            >;
+        };
+
+        GAME {
+            display-name = "Game";
+            bindings = <
+&trans  &trans  &trans  &kp W       &trans      &trans    &trans  &tog GAME   &trans    &trans          &trans    &trans
+&trans  &trans  &kp A   &kp S       &kp D       &trans    &trans  &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
+&trans  &trans  &trans  &trans      &trans      &trans    &trans  &trans      &trans    &trans          &trans    &trans
+                        &mkp LCLK   &mkp MCLK   &mkp RCLK &trans  &trans
             >;
         };
     };
