@@ -133,19 +133,7 @@
             ;
     };
 
-LIVE_COUNTER=$(ps a | awk '{print $2}' | grep -vi "tty*" | uniq | wc -l);
-if [ $LIVE_COUNTER -eq 1 ]; then
-     neofetch
-fi
-LIVE_COUNTER=$(ps a | awk '{print $2}' | grep -vi "tty*" | uniq | wc -l);
-if [ $LIVE_COUNTER -eq 1 ]; then
-     neofetch
-fi
     charybdis_position_map {
-LIVE_COUNTER=$(ps a | awk '{print $2}' | grep -vi "tty*" | uniq | wc -l);
-if [ $LIVE_COUNTER -eq 1 ]; then
-     neofetch
-fi
         compatible = "zmk,physical-layout-position-map";
 
         complete;
