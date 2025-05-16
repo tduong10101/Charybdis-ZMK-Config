@@ -144,7 +144,7 @@
 &trans  &trans        &trans        &trans      &trans      &trans     &trans       &trans   &trans    &trans          &trans    &trans
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LSHFT   &trans     &trans       &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
 &trans  &trans        &trans        &trans      &trans      &trans     &mo SCROLL   &trans      &trans    &trans          &trans    &trans
-                                    &mkp LCLK   &mkp MCLK   &mkp RCLK  &trans  &tog BASIC 
+                                    &mkp LCLK   &mkp MCLK   &mkp RCLK  &trans  &tog BASE 
             >;
         };
 
@@ -161,9 +161,9 @@
         GAME {
             display-name = "Game";
             bindings = <
-&trans  &trans  &trans  &kp W       &trans      &trans    &trans  &tog GAME   &trans    &trans          &trans    &trans
+&trans  &trans  &trans  &kp W       &trans      &trans    &trans  &trans   &trans    &trans          &trans    &trans
 &trans  &trans  &kp A   &kp S       &kp D       &trans    &trans  &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
-&trans  &trans  &trans  &trans      &trans      &trans    &trans  &trans      &trans    &trans          &trans    &trans
+&trans  &trans  &trans  &trans      &trans      &trans    &trans  &tog GAME      &trans    &trans          &trans    &trans
                         &mkp LCLK   &kp SPACE   &mkp RCLK &trans  &trans
             >;
         };
