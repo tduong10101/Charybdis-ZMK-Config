@@ -142,7 +142,7 @@
             display-name = "Mouse";
             bindings = <
 &trans  &trans        &trans        &trans      &trans      &trans     &trans       &trans   &trans    &trans          &trans    &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LSHFT   &trans     &trans       &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
+&trans  &trans        &trans        &trans      &trans      &trans    &trans  &trans   &trans    &trans          &trans    &trans
 &trans  &trans        &trans        &trans      &trans      &trans     &mo SCROLL   &trans      &trans    &trans          &trans    &trans
                                     &mkp LCLK   &mkp MCLK   &mkp RCLK  &trans  &tog BASE 
             >;
@@ -152,7 +152,7 @@
             display-name = "Scroll";
             bindings = <
 &trans  &trans        &trans        &trans      &trans      &trans    &trans  &trans   &trans    &trans          &trans    &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LSHFT   &trans    &trans  &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
+&trans  &trans        &trans        &trans      &trans      &trans    &trans  &trans   &trans    &trans          &trans    &trans
 &trans  &trans        &trans        &trans      &trans      &trans    &trans  &tog GAME      &trans    &trans          &trans    &trans
                                     &mkp LCLK   &mkp MCLK   &mkp RCLK &trans  &trans
             >;
