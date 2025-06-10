@@ -5,12 +5,12 @@
 #define U_TAPPING_TERM 170
 
 #define QWERTY 0
-#define LOWER 1
-#define RAISE 2
-#define MOUSE 3
-#define SCROLL 4
-#define GAME 5
-#define COLEMAK 6
+#define COLEMAK 1
+#define LOWER 2
+#define RAISE 3
+#define MOUSE 4
+#define SCROLL 5
+#define GAME 6
 
 / {
     combos {
@@ -119,6 +119,15 @@
             >;
         };
 
+        COLEMAK {
+            display-name = "COLEMAK";
+            bindings = <
+&kp TAB   &kp Q             &kp W             &kp F          &kp P           &kp G         &kp J       &kp L               &kp U         &kp Y                 &kp SEMI             &kp BSPC
+&kp LCTRL &u_mt LEFT_GUI A  &u_mt LEFT_ALT R  &u_mt LCTRL S   &u_mt LSHFT T   &kp D         &kp H       &u_mt RSHFT N       &u_mt RCTRL E &u_mt RIGHT_ALT I     &u_mt RGUI O   &u_mt RCTRL APOS
+&kp LSHFT &kp Z             &kp X             &kp C           &kp V           &kp B         &kp K   &kp M               &kp COMMA     &kp DOT               &kp FSLH          &kp RSHFT
+                                              &kp ESC         &u_lt LOWER TAB     &kp RET       &kp SPACE   &mo RAISE
+            >;
+        };
        LOWER {
             display-name = "Lower";
             bindings = <
@@ -166,15 +175,6 @@
 &trans  &trans  &kp A   &kp S       &kp D       &trans    &trans  &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
 &trans  &trans  &trans  &trans      &trans      &trans    &trans  &tog GAME      &trans    &trans          &trans    &trans
                         &mkp LCLK   &kp SPACE   &mkp RCLK &trans  &trans
-            >;
-        };
-        COLEMAK {
-            display-name = "COLEMAK";
-            bindings = <
-&kp TAB   &kp Q             &kp W             &kp F          &kp P           &kp G         &kp J       &kp L               &kp U         &kp Y                 &kp SEMI             &kp BSPC
-&kp LCTRL &u_mt LEFT_GUI A  &u_mt LEFT_ALT R  &u_mt LCTRL S   &u_mt LSHFT T   &kp D         &kp H       &u_mt RSHFT N       &u_mt RCTRL E &u_mt RIGHT_ALT I     &u_mt RGUI O   &u_mt RCTRL APOS
-&kp LSHFT &kp Z             &kp X             &kp C           &kp V           &kp B         &kp K   &kp M               &kp COMMA     &kp DOT               &kp FSLH          &kp RSHFT
-                                              &kp ESC         &u_lt LOWER TAB     &kp RET       &kp SPACE   &mo RAISE
             >;
         };
     };
