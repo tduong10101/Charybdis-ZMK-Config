@@ -4,12 +4,13 @@
 
 #define U_TAPPING_TERM 170
 
-#define BASE 0
+#define QWERTY 0
 #define LOWER 1
 #define RAISE 2
 #define MOUSE 3
 #define SCROLL 4
 #define GAME 5
+#define COLEMAK 6
 
 / {
     combos {
@@ -108,8 +109,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        BASE {
-            display-name = "Base";
+        QWERTY {
+            display-name = "QWERTY";
             bindings = <
 &kp TAB   &kp Q             &kp W             &kp E          &kp R           &kp T         &kp Y       &kp U               &kp I         &kp O                 &kp P             &kp BSPC
 &kp LCTRL &u_mt LEFT_GUI A  &u_mt LEFT_ALT S  &u_mt LCTRL D   &u_mt LSHFT F   &kp G         &kp H       &u_mt RSHFT J       &u_mt RCTRL K &u_mt RIGHT_ALT L     &u_mt RGUI SEMI   &u_mt RCTRL APOS
@@ -144,7 +145,7 @@
 &trans  &trans        &trans        &trans      &trans      &trans     &trans       &trans   &trans    &trans          &trans    &trans
 &trans  &trans        &trans        &trans      &trans      &trans    &trans  &trans   &trans    &trans          &trans    &trans
 &trans  &trans        &trans        &trans      &trans      &trans     &mo SCROLL   &trans      &trans    &trans          &trans    &trans
-                                    &mkp LCLK   &mkp MCLK   &mkp RCLK  &trans  &tog BASE 
+                                    &mkp LCLK   &mkp MCLK   &mkp RCLK  &trans  &tog QWERTY 
             >;
         };
 
@@ -153,7 +154,7 @@
             bindings = <
 &trans  &trans        &trans        &trans      &trans      &trans    &trans  &trans   &trans    &trans          &trans    &trans
 &trans  &trans        &trans        &trans      &trans      &trans    &trans  &trans   &trans    &trans          &trans    &trans
-&trans  &trans        &trans        &trans      &trans      &trans    &trans  &tog GAME      &trans    &trans          &trans    &trans
+&trans  &trans        &trans        &trans      &trans      &trans    &trans  &tog GAME      &tog COLEMAK    &trans          &trans    &trans
                                     &mkp LCLK   &mkp MCLK   &mkp RCLK &trans  &trans
             >;
         };
@@ -165,6 +166,15 @@
 &trans  &trans  &kp A   &kp S       &kp D       &trans    &trans  &kp RSHFT   &kp RCTRL &kp RIGHT_ALT   &kp RGUI  &trans
 &trans  &trans  &trans  &trans      &trans      &trans    &trans  &tog GAME      &trans    &trans          &trans    &trans
                         &mkp LCLK   &kp SPACE   &mkp RCLK &trans  &trans
+            >;
+        };
+        COLEMAK {
+            display-name = "COLEMAK";
+            bindings = <
+&kp TAB   &kp Q             &kp W             &kp F          &kp P           &kp G         &kp J       &kp L               &kp U         &kp Y                 &kp SEMI             &kp BSPC
+&kp LCTRL &u_mt LEFT_GUI A  &u_mt LEFT_ALT R  &u_mt LCTRL S   &u_mt LSHFT T   &kp D         &kp H       &u_mt RSHFT N       &u_mt RCTRL E &u_mt RIGHT_ALT I     &u_mt RGUI O   &u_mt RCTRL APOS
+&kp LSHFT &kp Z             &kp X             &kp C           &kp V           &kp B         &kp K   &kp M               &kp COMMA     &kp DOT               &kp FSLH          &kp RSHFT
+                                              &kp ESC         &u_lt LOWER TAB     &kp RET       &kp SPACE   &mo RAISE
             >;
         };
     };
