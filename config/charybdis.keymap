@@ -113,15 +113,6 @@
             >;
         };
 
-        COLEMAK {
-            display-name = "COLEMAK";
-            bindings = <
-&kp TAB   &kp Q             &kp W             &kp F          &kp P           &kp G         &kp J       &kp L               &kp U         &kp Y                 &kp SEMI             &kp BSPC
-&kp LCTRL &u_mt LEFT_GUI A  &u_mt LEFT_ALT R  &u_mt LCTRL S   &u_mt LSHFT T   &kp D         &kp H       &u_mt RSHFT N       &u_mt RCTRL E &u_mt RIGHT_ALT I     &u_mt RGUI O   &u_mt RCTRL APOS
-&kp LSHFT &kp Z             &kp X             &kp C           &kp V           &kp B         &kp K   &kp M               &kp COMMA     &kp DOT               &kp FSLH          &kp RSHFT
-                                              &kp ESC         &u_lt LOWER TAB     &kp RET       &kp SPACE   &mo RAISE
-            >;
-        };
         LOWER {
             display-name = "LOWER"
             bindings = <
@@ -168,6 +159,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        COLEMAK {
+            display-name = "COLEMAK";
+            bindings = <
+&kp TAB   &kp Q             &kp W             &kp F          &kp P           &kp G         &kp J       &kp L               &kp U         &kp Y                 &kp SEMI             &kp BSPC
+&kp LCTRL &u_mt LEFT_GUI A  &u_mt LEFT_ALT R  &u_mt LCTRL S   &u_mt LSHFT T   &kp D         &kp H       &u_mt RSHFT N       &u_mt RCTRL E &u_mt RIGHT_ALT I     &u_mt RGUI O   &u_mt RCTRL APOS
+&kp LSHFT &kp Z             &kp X             &kp C           &kp V           &kp B         &kp K   &kp M               &kp COMMA     &kp DOT               &kp FSLH          &kp RSHFT
+                                              &kp ESC         &u_lt LOWER TAB     &kp RET       &kp SPACE   &mo RAISE
             >;
         };
     };
