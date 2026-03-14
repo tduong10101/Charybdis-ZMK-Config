@@ -9,9 +9,10 @@
 #define QWERTY 0
 #define LOWER 1
 #define RAISE 2
-#define MOUSE 3
-#define SCROLL 4
-#define COLEMAK 5
+#define BT 3 
+#define MOUSE 4
+#define SCROLL 5
+#define COLEMAK 6
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
