@@ -13,11 +13,10 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: charybdis_left
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: charybdis_right
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: settings_reset
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
