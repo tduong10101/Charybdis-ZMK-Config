@@ -143,7 +143,7 @@
         };
 
         AUTO-MOUSE {
-            display-name = "AUTO-MOUSE"
+            display-name = "AUTO-MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &kp C_VOL_UP  &kp PG_UP    &trans  &trans  &trans  &trans  &trans  &trans
